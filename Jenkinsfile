@@ -10,13 +10,13 @@ pipeline {
 
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/USERNAME/docker-jenkins-lab.git'
+                git 'https://github.com/Sakshi-Sood/docker-jenkins-lab.git'
             }
         }
 
         stage('Build Docker Image') {
             steps {
-                bat 'docker build -t %IMAGE_NAME% .'
+                bat 'docker build -t %docker-jenkins-lab% .'
             }
         }
 
